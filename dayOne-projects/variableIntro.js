@@ -8,5 +8,5 @@ console.log("==== Welcome to Club Athena🏢 ====");
 if (userAge >= 18){
     console.log(`Welcome ${userName}, you're currently ${userAge} years old which means you can enter the club!!`);
 } else {
-    console.log(`Well this is a bummer ${userName}, its seems you're ${userAge} years old which means you're below the minimum age of 18!!`)
+    console.log(`Well this is a bummer ${userName}, its seems you're only ${userAge} years old which means you're below the minimum age of 18!!`)
 }
