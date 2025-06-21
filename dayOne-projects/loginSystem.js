@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")();
+
 //array for registerd users
 const registeredUsers = [];
 
@@ -12,6 +14,7 @@ if(registeredUsers.includes(user)){
     console.log(`Welcome back, ${user}! You're already registered!`)
 } else {
     registeredUsers.push(user);
-    console.log(`Welcome to CoddyTech ${user}!! you have been successfuly registered!!`)
+    console.log(`Welcome to CoddyTech ${user}!! you have been successfuly registered!!`);
+    console.log(registeredUsers)
 }
 
