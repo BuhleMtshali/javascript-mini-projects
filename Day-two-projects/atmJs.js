@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")();
 
-
 //defining variables
 let balance = 1000;
 let choice;
