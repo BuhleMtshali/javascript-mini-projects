@@ -20,3 +20,5 @@ function transaction(){
 
     } while(choice !== 4);
 }
+
+transaction();
