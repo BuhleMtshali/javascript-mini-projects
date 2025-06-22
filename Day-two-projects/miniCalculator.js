@@ -26,7 +26,8 @@ function calculatorProgram(){
         console.log(`Result: ${result}`);
         break;
     default:
-        console.log(`You have entered an invalid ${operator}`)
+        console.log(`You have entered an invalid ${operator}`);
+        return;
 
    }
 }
