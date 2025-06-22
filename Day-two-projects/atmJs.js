@@ -18,6 +18,12 @@ function transaction(){
 
         choice = parseFloat(prompt("Choose an option to continue with your transaction: "));
 
+        if (isNaN(choice)) {
+            console.log("🚫 Invalid input. Please enter a number between 1–4.\n");
+            continue;
+        }
+
+
         switch(choice){
             case 1:
                 console.log(`${name}, Your current Balance is: ${balance}`);
