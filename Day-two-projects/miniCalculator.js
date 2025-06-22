@@ -8,6 +8,11 @@ function calculatorProgram(){
    let operator = prompt("Enter an Operator(+, -, *, /): ");
    let secondValue = parseFloat(prompt("Enter your second value: "));
 
+    if (isNaN(valueOne) || isNaN(secondValue)) {
+    console.log("🚫 Invalid number entered. Please try again.");
+    return;
+    }
+
    switch(operator){
     case '+':
         result = valueOne + secondValue;
