@@ -22,8 +22,12 @@ function calculatorProgram(){
         console.log(`Result: ${result}`);
         break;
     case '/':
-        result = valueOne / secondValue;
-        console.log(`Result: ${result}`);
+        if(secondValue === 0){
+            console.log('Error, we cannot divide by 0');
+        } else {
+            result = valueOne / secondValue;
+            console.log(`Result: ${result}`);
+        }
         break;
     default:
         console.log(`You have entered an invalid ${operator}`);
