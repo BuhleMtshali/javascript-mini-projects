@@ -32,4 +32,12 @@ function calculatorProgram(){
    }
 }
 
-calculatorProgram()
+let calculateAgain = "yes"; //default to enter loop
+
+while(calculateAgain.toLowerCase() === "yes" || calculateAgain.toLowerCase() === "y"){
+    calculatorProgram();
+
+    calculateAgain = prompt("Do you want to make another calculation? (yes/no): ").trim();
+}
+
+console.log("Thank you for trying my mini calculator!!")
