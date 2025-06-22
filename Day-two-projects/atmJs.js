@@ -6,35 +6,17 @@ let balance = 1000;
 let choice;
 
 console.log("====== 🏧Welcome to JS Bank🏦 =======\n");
+let name = prompt("Enter your name: ")
 
-
-
-while(true){
-
-    let name = prompt("Enter your name💁🏼‍♀️: ");
-    console.log(`Welcome to JS Bank🏦 ${name}, lets create an account: `);
-
+function transaction(){
     do{
-       let accountNumber = prompt(`Enter your 5-digit Account Number ${name}🔢: `);
-       if(accountNumber.length !== 5){
-            console.log(`You account number has to be 5 digits!`);
-       }
+        console.log("Please choose an option: ");
+        console.log("1. Check Balance");
+        console.log("2. Deposit");
+        console.log("3. Withdrawal");
+        console.log("4. Exit");
 
-    } while(accountNumber.length() !== 5);
+        choice = prompt("Choose an option to continue with your transaction: ");
 
-    let pin = prompt(`Create your pin ${name}: `);
-
-    do{
-        let confirmPin = prompt(`Please confirm your pin: `);
-
-        if(pin !== confirmPin){
-            console.log("Pins do not match, try again")
-        }
-    } while(pin !== confirmPin);
-
-
+    } while(choice !== 4);
 }
-
-    
-
-
