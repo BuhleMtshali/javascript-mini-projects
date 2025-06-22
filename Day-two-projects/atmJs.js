@@ -5,8 +5,19 @@ const prompt = require("prompt-sync")();
 let balance = 1000;
 let choice;
 
-console.log("====== Welcome to JS Bank🏦 =======")
-let name = prompt("Enter your name: ");
+console.log("====== 🏧Welcome to JS Bank🏦 =======\n");
 
-//welcome message
-console.log(`====== Welcome to JavaScript Bank🏦 ${name} =====`);
+let name = prompt("Enter your name💁🏼‍♀️: ");
+
+
+if(!name){
+    
+    console.log("Please enter your name before we can proceed!!")
+} else {
+
+    //welcome message
+    console.log(`====== Welcome to JS Bank ${name}, lets create your account🫆 =====\n`);
+}
+    
+
+
