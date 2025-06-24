@@ -1,13 +1,11 @@
 const prompt = require("prompt-sync")();
 
-let celsius = parseFloat(prompt("Enter the temperature (in celsius): "));
-
 function convertTemp(celsius){
     if(!isNaN(celsius)){
         let fahrenheit = (celsius * 9/5) + 32;
-        return console.log(`The temperature ${celsius}ºC is ${fahrenheit.toFixed(2)}ºF`);
+        return console.log(`🌡️ ${celsius}ºC is equal to ${fahrenheit.toFixed(2)}ºF`);
     } else {
-        console.log(`${celsius} is an invalid number`)
+        console.log(`🚫 "${celsius}" is not a valid number.`);
     }
     
 }
@@ -15,9 +13,9 @@ function convertTemp(celsius){
 let checkAgain = "yes";
 
 while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
+    let celsius = parseFloat(prompt("Enter the temperature (in celsius): ").trim());
     convertTemp(celsius);
-    checkAgain = prompt("Do you want perform another temperature calculation? (yes/no): ");
-   
+    checkAgain = prompt("Do you want perform another temperature calculation? (yes/no): ").trim();
 }
 
-console.log("Thank you for trying my mini project!")
+console.log("👋🏽 Thanks for using the Mini Temperature Converter!")
