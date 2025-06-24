@@ -15,7 +15,7 @@ function convertTemp(celsius){
 let checkAgain = "yes";
 
 while(checkAgain.toLowerCase() === "yes" || checkAgain.toLowerCase() === "y"){
-    convertTemp();
+    convertTemp(celsius);
     
     checkAgain = prompt("Do you want perform another tempereture calculation? (yes/no): ");
 }
