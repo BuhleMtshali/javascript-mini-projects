@@ -1,7 +1,4 @@
-const arrayMax = [55];
+const arrayMax = [55, 43, 23, 67, 89, 12, 33, ,];
 
-arrayMax[0] = 'hi';
-console.log(arrayMax);
+console.log(arrayMax.length);
 
-arrayMax = [45, 67];
-console.log(arrayMax)
